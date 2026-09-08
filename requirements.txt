@@ -1,0 +1,7 @@
+flake8~=7.3.0
+matplotlib~=3.10.9
+noregret~=0.0.0.dev15
+ordered-set~=4.1.0
+pandas[all]~=3.0.3
+seaborn~=0.13.2
+tqdm~=4.67.3

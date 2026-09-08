@@ -13,7 +13,7 @@ int main (int argc, char ** argv) {
 
     GPUCFR instance = GPUCFR(gamepath);
     instance.run_iterations(iterations);
-    std::cout << iterations << " iterations takes " << instance.elapsed_time() << "ms on "<< gamepath << std::endl;
+    instance.print_average_strategy();
 
     return 0;
 

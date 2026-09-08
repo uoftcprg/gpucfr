@@ -366,10 +366,13 @@ void GPUCFR::print_average_strategy() {
     for (auto information_set: information_sets_) {
         auto average_strategy = information_set->get_average_strategy();
 
-        std::cout << "Information set hash " << information_set->get_hash() << std::endl;
+        std::cout << information_set->get_hash() << ' ';
+
         for (int i = 0; i < average_strategy.size(); i++) {
-            std::cout << "\tAction index " << i << "; Action probability " << average_strategy.at(i) << std::endl;
+            std::cout << average_strategy.at(i) << ' ';
         }
+
+	std::cout << std::endl;
     }
 }
 
